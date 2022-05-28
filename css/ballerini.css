@@ -12,13 +12,13 @@
   --choco: #8E5D52;
   --bege0: #FFF2E7;
   --bege1: #ECD6C4;
+  --bege2: rgba(236, 214, 196, 0.53);
+  --bege3: #ECD6C4;
 }
 
 body{
   /**/
-  background: linear-gradient(68.15deg, var(--marrom) 17%, var(--choco) 86%);
-  width: 100vw;
-  height: 100vh;
+  background: linear-gradient(68.15deg, var(--marrom) 25%, var(--choco) 86%);
   font-size: 100%;
 }
 
@@ -35,7 +35,9 @@ header img {
 }
 
 header nav {
+  width: 30vw;
   display: flex;
+  justify-content: space-between;
   gap: 32px;
 }
 
@@ -75,11 +77,11 @@ main section div h2 {
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #ECD6C4;
+  color: var(--bege3);
 }
 
 main section div button {
-  background-color: #ECD6C4;
+  background-color: var(--bege3);
   width: 180px;
   height: 60px;
   border: none;
@@ -92,7 +94,7 @@ main section div button {
 }
 
 main section div button:hover {
-  background-color: rgba(236, 214, 196, 0.53);
+  background-color: var(--bege2)
 }
 
 main section img {
@@ -113,7 +115,7 @@ main section:nth-child(2) h3 {
   font-family: 'Righteous', cursive;
   font-weight: 400;
   font-size: 24px;
-  color: #FFF2EF;
+  color: var(--bege0);
   margin-bottom: 16px;
 }
 
@@ -125,12 +127,12 @@ main section:nth-child(2) p {
 }
 
 footer {
-    padding: 32px;
+    padding: 18px;
     border-top: 0.4px solid var(--bege0);
 }
 
 footer img {
-  height: 48px;
+  height: 36px;
   display: block;
   margin: 0 auto;
 }
