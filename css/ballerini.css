@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+:root{
+  --marrom: #2F2325;
+  --choco: #8E5D52;
+  --bege0: #FFF2E7;
+  --bege1: #ECD6C4;
+}
+
+body{
+  /**/
+  background: linear-gradient(68.15deg, var(--marrom) 17%, var(--choco) 86%);
+  width: 100vw;
+  height: 100vh;
+  font-size: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+header img {
+  height: 124px;
+}
+
+header nav {
+  display: flex;
+  gap: 32px;
+}
+
+header nav a {
+  font-family: 'Sarala', sans-serif;
+  color: var(--bege0);
+  font-weight: 400;
+  font-size: 18px
+}
+
+main {
+  margin-bottom: 48px;
+  border-top: 0.4px solid var(--bege0);
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main section div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+main section div h1 {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: var(--bege0);
+}
+
+main section div h2 {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ECD6C4;
+}
+
+main section div button {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #2F2325;
+}
+
+main section div button:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+}
+
+main section img {
+  height: 430px;
+}
+
+main section:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+main section:nth-child(2) h3 {
+  border-top: 0.4px solid var(--bege0);
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2EF;
+  margin-bottom: 16px;
+}
+
+main section:nth-child(2) p {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--bege1);
+}
+
+footer {
+    padding: 32px;
+    border-top: 0.4px solid var(--bege0);
+}
+
+footer img {
+  height: 48px;
+  display: block;
+  margin: 0 auto;
+}
